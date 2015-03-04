@@ -11,6 +11,9 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVI" Type="Folder">
+			<Item Name="Typedefs" Type="Folder">
+				<Item Name="NtfyLvFpga_Typedef_SMTPSetting.ctl" Type="VI" URL="../SubVI/NtfyLvFpga_Typedef_SMTPSetting.ctl"/>
+			</Item>
 			<Item Name="NtfyLvFpga_SUB__cutoffLine_MultiLineString.vi" Type="VI" URL="../SubVI/NtfyLvFpga_SUB__cutoffLine_MultiLineString.vi"/>
 			<Item Name="NtfyLvFpga_SUB_base64_fast_decode.vi" Type="VI" URL="../SubVI/NtfyLvFpga_SUB_base64_fast_decode.vi"/>
 			<Item Name="NtfyLvFpga_SUB_base64_fast_encode.vi" Type="VI" URL="../SubVI/NtfyLvFpga_SUB_base64_fast_encode.vi"/>
@@ -31,15 +34,12 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
-				<Item Name="GetDateTimeInSecsCompatVI.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/GetDateTimeInSecsCompatVI.vi"/>
 				<Item Name="LabVIEWSMTPClient.lvlib" Type="Library" URL="/&lt;vilib&gt;/smtpClient/LabVIEWSMTPClient.lvlib"/>
-				<Item Name="LV70U32ToDateRec.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70U32ToDateRec.vi"/>
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
-				<Item Name="NI_SMTPEmail.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SMTP/NI_SMTPEmail.lvlib"/>
 				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
@@ -66,28 +66,23 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8E5505C0-F866-4ADB-A76B-EAEC9BE5B18F}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">LvNotifyFPGACompileFinish.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">NotifyLvFPGACompileFinish.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/exe/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">サポートディレクトリ</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/exe/data</Property>
-				<Property Name="Destination[2].destName" Type="Str">DLL</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/exe</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{6D4B975E-CBD7-44BC-AED0-F6446B6441E2}</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{BFF4A54F-11BD-4522-AA14-B8DFE2F83BF6}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/マイ コンピュータ/NotifyLvFPGACompileFinish.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_internalName" Type="Str">Exe</Property>
 				<Property Name="TgtF_productName" Type="Str">Exe</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{A1C858F9-697F-4F35-A270-33776A6CEAAB}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">LvNotifyFPGACompileFinish.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">NotifyLvFPGACompileFinish.exe</Property>
 			</Item>
 		</Item>
 	</Item>
