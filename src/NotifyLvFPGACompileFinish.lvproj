@@ -68,14 +68,14 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{8E5505C0-F866-4ADB-A76B-EAEC9BE5B18F}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">NotifyLvFPGACompileFinish.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/exe/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">サポートディレクトリ</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/exe/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BFF4A54F-11BD-4522-AA14-B8DFE2F83BF6}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{33528B09-922C-4B50-9549-2DD927F697EA}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/マイ コンピュータ/NotifyLvFPGACompileFinish.vi</Property>
