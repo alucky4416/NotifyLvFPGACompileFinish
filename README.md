@@ -6,7 +6,7 @@ NotifyLvFPGACompileFinish
 * LabVIEW FPGAコンパイル完了時に指定されたメールアドレスに通知メールを
 送信するツール。
 * 対応OS Windows
-* Version 0.0.1
+* Version 0.0.2
 
 FPGAコンパイルは短くても20分から30分、長いと1時間くらいはかかります。
 その間、他の作業をしているとうっかり忘れてしまったり、そういうときに限って
